@@ -8,5 +8,6 @@ VOCAB_FILENAME = 'vocab.json'
 
 # Ugly hardcoded hyperparameters
 NUM_STEPS = 35 # truncated backprop length
-LEARNING_RATE = 0.001
+LEARNING_RATE = 0.0001
 HIDDEN_SIZE = 1500 # layer size
+EMBEDDING_SIZE = 200
