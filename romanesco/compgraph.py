@@ -15,7 +15,7 @@ def define_computation_graph(vocab_size: int, batch_size: int):
     targets = tf.placeholder(tf.int32, shape=(batch_size, NUM_STEPS), name='y') # (time, batch)
 
     with tf.name_scope('Embedding'):
-        embedding = tf.get_variable('word_embedding', [vocab_size, EMBEDDING_SIZE])
+        embedding = tf.get_variable('word_embedding', [vocab_size, HIDDEN_SIZE])
         input_embeddings = tf.nn.embedding_lookup(embedding, inputs)
 
     with tf.name_scope('RNN'):
