@@ -23,6 +23,8 @@ def get_argument_parser():
                        help='the folder to store model files.')
     train.add_argument('-l', '--log_to', default='logs',
                        help='the folder to store log files. Use for monitoring with tensorboard.')
+    ##
+    train.add_argument('-d', '--dev', help='name of dev set used in training.')
     # score
     score = subparsers.add_parser('score', help='Use a trained model to score a text.')
     score.add_argument('data', help='the data to be scored, a plain text file.')
