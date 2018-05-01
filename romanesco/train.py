@@ -36,6 +36,8 @@ def train(data: str, epochs: int, batch_size: int, vocab_max_size: int,
 
     saver = tf.train.Saver()
 
+    dev_data = reader.read(kwargs.pop("dev"), vocab)
+
     with tf.Session() as session:
         # init
         session.run(tf.global_variables_initializer())
@@ -62,15 +64,32 @@ def train(data: str, epochs: int, batch_size: int, vocab_max_size: int,
 
                     ### Attempt to add early stop functionality.
                     # For each 100th iteration, score perplexity on dev set. If the current iteration perplexity is greater than the last 5 perplexity scores in list 'iteration perplexities', model is starting to overfit.
-                    current_iter_per = score(dev, load_from, batch_size)
+                    # current_iter_per = score(dev, load_from, batch_size)
+
+                    # iteration_perplexities.append(current_iter_per)
+                    # if len(iteration_perplexity) >= 5:
+                    #     for i in iteration_perplexity[-5:]:
+                    #         if current_iter_per > i:
+                    #             perplexity = np.exp(total_loss / total_iter)
+                    #             logging.info("Lowest perplexity reached. Training has been early stopped. Perplexity on training data after epoch %s: %.2f", epoch, perplexity)
+                    #             saver.save(session, os.path.join(save_to, MODEL_FILENAME))
+                    #             sys.exit()
+
+                    total_loss = 0.0
+                    total_iter = 0
+                    for x, y in reader.iterate(dev_data,
+                                               batch_size,
+                                               NUM_STEPS):
+                        l = session.run([loss], feed_dict={inputs: x, targets: y})
+                        total_loss_dev += l[0]
+                        total_iter_dev += 1
+                    current_iter_per = np.exp(total_loss_dev / total_iter_dev)
+                    logging.info("current perplexity on dev set: %.2f",
+                                 current_iter_per)
                     iteration_perplexities.append(current_iter_per)
-                    if len(iteration_perplexity) >= 5:
-                        for i in iteration_perplexity[-5:]:
-                            if current_iter_per > i:
-                                perplexity = np.exp(total_loss / total_iter)
-                                logging.info("Lowest perplexity reached. Training has been early stopped. Perplexity on training data after epoch %s: %.2f", epoch, perplexity)
-                                saver.save(session, os.path.join(save_to, MODEL_FILENAME))
-                                sys.exit()
+                    for i in iteration_perplexity[-5:]:
+                        if current_iter_per > i:
+                            perplexity = np.exp(total_loss / total_iter)
 
                     ###
 
