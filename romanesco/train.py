@@ -48,7 +48,7 @@ def train(data: str, epochs: int, batch_size: int, vocab_max_size: int,
         # iterate over training data `epoch` times
         for epoch in range(1, epochs + 1):
             ###
-            iteration_perplexities = []
+            # iteration_perplexities = []
             ###
 
             total_loss = 0.0
@@ -77,20 +77,47 @@ def train(data: str, epochs: int, batch_size: int, vocab_max_size: int,
 
                     total_loss_dev = 0.0
                     total_iter_dev = 0
+
+                    # Set previous iter per at a high perplexity
+                    previous_iter_per = float(1000)
+                    # Set counter to record number of times
+                    c = 0
+
                     for x, y in reader.iterate(dev_data,
                                                batch_size,
                                                NUM_STEPS):
-                        l = session.run([loss], feed_dict={inputs: x, targets: y})
+
+                        l = session.run([loss], feed_dict={inputs: x,
+                                                           targets: y})
+
                         total_loss_dev += l[0]
                         total_iter_dev += 1
+
                     current_iter_per = np.exp(total_loss_dev / total_iter_dev)
+
                     logging.info("current perplexity on dev set: %.2f",
                                  current_iter_per)
-                    iteration_perplexities.append(current_iter_per)
-                    for i in iteration_perplexities[-5:]:
-                        if current_iter_per > i:
-                            perplexity = np.exp(total_loss / total_iter)
 
+                    if current_iter_per > previous_iter_per:
+                        c += 1
+                    else:
+                        c = 0
+
+                    if c > 5:
+
+                    # Update previous iteration perpexity with current and reset current
+                        perplexity = np.exp(total_loss / total_iter)
+                        logging.info("Training stopped early. Model starting to overfit. Perplexity on training data after epoch %s: %.2f", epoch, perplexity)
+                        saver.save(session, os.path.join(save_to, MODEL_FILENAME))
+                        sys.exit()
+
+                    previous_iter_per = current_iter_per
+                    del current_iter_per
+
+                    # iteration_perplexities.append(current_iter_per)
+                    # for i in iteration_perplexities[-5:]:
+                    #     if current_iter_per > i:
+                    #         perplexity = np.exp(total_loss / total_iter)
                     ###
 
             perplexity = np.exp(total_loss / total_iter)
