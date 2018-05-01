@@ -103,7 +103,7 @@ def train(data: str, epochs: int, batch_size: int, vocab_max_size: int,
                     else:
                         c = 0
 
-                    if c > 5:
+                    if c > 3:
 
                     # Update previous iteration perpexity with current and reset current
                         perplexity = np.exp(total_loss / total_iter)
