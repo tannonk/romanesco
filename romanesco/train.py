@@ -75,8 +75,8 @@ def train(data: str, epochs: int, batch_size: int, vocab_max_size: int,
                     #             saver.save(session, os.path.join(save_to, MODEL_FILENAME))
                     #             sys.exit()
 
-                    total_loss = 0.0
-                    total_iter = 0
+                    total_loss_dev = 0.0
+                    total_iter_dev = 0
                     for x, y in reader.iterate(dev_data,
                                                batch_size,
                                                NUM_STEPS):
