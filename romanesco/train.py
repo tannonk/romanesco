@@ -87,7 +87,7 @@ def train(data: str, epochs: int, batch_size: int, vocab_max_size: int,
                     logging.info("current perplexity on dev set: %.2f",
                                  current_iter_per)
                     iteration_perplexities.append(current_iter_per)
-                    for i in iteration_perplexity[-5:]:
+                    for i in iteration_perplexities[-5:]:
                         if current_iter_per > i:
                             perplexity = np.exp(total_loss / total_iter)
 
