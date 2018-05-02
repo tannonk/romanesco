@@ -2,6 +2,7 @@
 
 import os
 import logging
+import sys
 
 import numpy as np
 import tensorflow as tf
@@ -12,7 +13,6 @@ from romanesco.vocab import Vocabulary
 from romanesco.compgraph import define_computation_graph
 ####
 from romanesco.score import score
-import sys
 
 def train(data: str, epochs: int, batch_size: int, vocab_max_size: int,
           save_to: str, log_to: str, **kwargs):
@@ -62,19 +62,6 @@ def train(data: str, epochs: int, batch_size: int, vocab_max_size: int,
                 if total_iter % 100 == 0:
                     logging.debug("Epoch=%s, iteration=%s", epoch, total_iter)
 
-                    ### Attempt to add early stop functionality.
-                    # For each 100th iteration, score perplexity on dev set. If the current iteration perplexity is greater than the last 5 perplexity scores in list 'iteration perplexities', model is starting to overfit.
-                    # current_iter_per = score(dev, load_from, batch_size)
-
-                    # iteration_perplexities.append(current_iter_per)
-                    # if len(iteration_perplexity) >= 5:
-                    #     for i in iteration_perplexity[-5:]:
-                    #         if current_iter_per > i:
-                    #             perplexity = np.exp(total_loss / total_iter)
-                    #             logging.info("Lowest perplexity reached. Training has been early stopped. Perplexity on training data after epoch %s: %.2f", epoch, perplexity)
-                    #             saver.save(session, os.path.join(save_to, MODEL_FILENAME))
-                    #             sys.exit()
-
                     total_loss_dev = 0.0
                     total_iter_dev = 0
 
@@ -102,23 +89,14 @@ def train(data: str, epochs: int, batch_size: int, vocab_max_size: int,
                         c += 1
                     else:
                         c = 0
-
+                    # If last 4 perplexity scores on dev set are increasing, end training
                     if c > 3:
-
-                    # Update previous iteration perpexity with current and reset current
-                        perplexity = np.exp(total_loss / total_iter)
                         logging.info("Training stopped early. Model starting to overfit. Perplexity on training data after epoch %s: %.2f", epoch, perplexity)
                         saver.save(session, os.path.join(save_to, MODEL_FILENAME))
-                        sys.exit()
-
+                        sys.exit(0)
+                    # Update previous iteration perpexity with current and reset current
                     previous_iter_per = current_iter_per
                     del current_iter_per
-
-                    # iteration_perplexities.append(current_iter_per)
-                    # for i in iteration_perplexities[-5:]:
-                    #     if current_iter_per > i:
-                    #         perplexity = np.exp(total_loss / total_iter)
-                    ###
 
             perplexity = np.exp(total_loss / total_iter)
             logging.info("Perplexity on training data after epoch %s: %.2f", epoch, perplexity)
