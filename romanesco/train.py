@@ -90,7 +90,7 @@ def train(data: str, epochs: int, batch_size: int, vocab_max_size: int,
                     else:
                         c = 0
                     # If last 4 perplexity scores on dev set are increasing, end training
-                    if c > 3:
+                    if c == 3:
                         logging.info("Training stopped early. Model starting to overfit. Perplexity on training data after epoch %s: %.2f", epoch, perplexity)
                         saver.save(session, os.path.join(save_to, MODEL_FILENAME))
                         sys.exit(0)
