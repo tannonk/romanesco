@@ -47,9 +47,10 @@ def train(data: str, epochs: int, batch_size: int, vocab_max_size: int,
 
         # iterate over training data `epoch` times
         for epoch in range(1, epochs + 1):
-            ###
-            # iteration_perplexities = []
-            ###
+            # Set previous iter per at a high perplexity
+            previous_iter_per = float(1000)
+            # Set counter to record number of times
+            c = 0
 
             total_loss = 0.0
             total_iter = 0
@@ -64,11 +65,6 @@ def train(data: str, epochs: int, batch_size: int, vocab_max_size: int,
 
                     total_loss_dev = 0.0
                     total_iter_dev = 0
-
-                    # Set previous iter per at a high perplexity
-                    previous_iter_per = float(1000)
-                    # Set counter to record number of times
-                    c = 0
 
                     for x, y in reader.iterate(dev_data,
                                                batch_size,
