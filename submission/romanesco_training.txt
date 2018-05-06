@@ -1,0 +1,643 @@
+2018-05-03 05:18:59,846 - WARNING - From /usr/local/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/base.py:198: retry (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the retry module or similar alternatives.
+2018-05-03 05:19:01.197745: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-05-03 05:19:01.372154: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:898] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-05-03 05:19:01.372972: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1344] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:0a.0
+totalMemory: 11.17GiB freeMemory: 11.10GiB
+2018-05-03 05:19:01.372995: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0
+2018-05-03 05:19:01.654473: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-05-03 05:19:01.654522: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 
+2018-05-03 05:19:01.654531: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N 
+2018-05-03 05:19:01.654874: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10764 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:0a.0, compute capability: 3.7)
+2018-05-03 05:19:15,264 - DEBUG - Epoch=1, iteration=100
+2018-05-03 05:19:19,458 - INFO - current perplexity on dev set: 693.45
+2018-05-03 05:19:31,734 - DEBUG - Epoch=1, iteration=200
+2018-05-03 05:19:35,854 - INFO - current perplexity on dev set: 566.49
+2018-05-03 05:19:48,158 - DEBUG - Epoch=1, iteration=300
+2018-05-03 05:19:52,285 - INFO - current perplexity on dev set: 488.18
+2018-05-03 05:20:04,565 - DEBUG - Epoch=1, iteration=400
+2018-05-03 05:20:08,595 - INFO - current perplexity on dev set: 427.87
+2018-05-03 05:20:20,888 - DEBUG - Epoch=1, iteration=500
+2018-05-03 05:20:24,970 - INFO - current perplexity on dev set: 393.40
+2018-05-03 05:20:37,289 - DEBUG - Epoch=1, iteration=600
+2018-05-03 05:20:41,347 - INFO - current perplexity on dev set: 367.04
+2018-05-03 05:20:53,689 - DEBUG - Epoch=1, iteration=700
+2018-05-03 05:20:57,923 - INFO - current perplexity on dev set: 345.30
+2018-05-03 05:21:10,337 - DEBUG - Epoch=1, iteration=800
+2018-05-03 05:21:14,492 - INFO - current perplexity on dev set: 327.65
+2018-05-03 05:21:26,820 - DEBUG - Epoch=1, iteration=900
+2018-05-03 05:21:31,001 - INFO - current perplexity on dev set: 309.39
+2018-05-03 05:21:43,360 - DEBUG - Epoch=1, iteration=1000
+2018-05-03 05:21:47,477 - INFO - current perplexity on dev set: 297.29
+2018-05-03 05:21:59,817 - DEBUG - Epoch=1, iteration=1100
+2018-05-03 05:22:03,910 - INFO - current perplexity on dev set: 285.95
+2018-05-03 05:22:16,215 - DEBUG - Epoch=1, iteration=1200
+2018-05-03 05:22:20,284 - INFO - current perplexity on dev set: 276.26
+2018-05-03 05:22:32,618 - DEBUG - Epoch=1, iteration=1300
+2018-05-03 05:22:36,696 - INFO - current perplexity on dev set: 268.01
+2018-05-03 05:22:48,999 - DEBUG - Epoch=1, iteration=1400
+2018-05-03 05:22:53,119 - INFO - current perplexity on dev set: 260.40
+2018-05-03 05:23:05,465 - DEBUG - Epoch=1, iteration=1500
+2018-05-03 05:23:09,500 - INFO - current perplexity on dev set: 253.31
+2018-05-03 05:23:21,822 - DEBUG - Epoch=1, iteration=1600
+2018-05-03 05:23:25,986 - INFO - current perplexity on dev set: 246.65
+2018-05-03 05:23:38,280 - DEBUG - Epoch=1, iteration=1700
+2018-05-03 05:23:42,379 - INFO - current perplexity on dev set: 240.46
+2018-05-03 05:23:54,697 - DEBUG - Epoch=1, iteration=1800
+2018-05-03 05:23:58,845 - INFO - current perplexity on dev set: 235.28
+2018-05-03 05:24:11,266 - DEBUG - Epoch=1, iteration=1900
+2018-05-03 05:24:15,479 - INFO - current perplexity on dev set: 230.33
+2018-05-03 05:24:27,900 - DEBUG - Epoch=1, iteration=2000
+2018-05-03 05:24:32,113 - INFO - current perplexity on dev set: 225.72
+2018-05-03 05:24:44,551 - DEBUG - Epoch=1, iteration=2100
+2018-05-03 05:24:48,760 - INFO - current perplexity on dev set: 221.89
+2018-05-03 05:25:01,135 - DEBUG - Epoch=1, iteration=2200
+2018-05-03 05:25:05,331 - INFO - current perplexity on dev set: 216.64
+2018-05-03 05:25:17,709 - DEBUG - Epoch=1, iteration=2300
+2018-05-03 05:25:21,832 - INFO - current perplexity on dev set: 212.66
+2018-05-03 05:25:34,177 - DEBUG - Epoch=1, iteration=2400
+2018-05-03 05:25:38,364 - INFO - current perplexity on dev set: 208.85
+2018-05-03 05:25:39,101 - INFO - Perplexity on training data after epoch 1: 358.25
+2018-05-03 05:25:52,008 - DEBUG - Epoch=2, iteration=100
+2018-05-03 05:25:56,027 - INFO - current perplexity on dev set: 205.33
+2018-05-03 05:26:08,260 - DEBUG - Epoch=2, iteration=200
+2018-05-03 05:26:12,342 - INFO - current perplexity on dev set: 201.62
+2018-05-03 05:26:24,583 - DEBUG - Epoch=2, iteration=300
+2018-05-03 05:26:28,571 - INFO - current perplexity on dev set: 198.03
+2018-05-03 05:26:40,797 - DEBUG - Epoch=2, iteration=400
+2018-05-03 05:26:44,806 - INFO - current perplexity on dev set: 194.20
+2018-05-03 05:26:57,160 - DEBUG - Epoch=2, iteration=500
+2018-05-03 05:27:01,386 - INFO - current perplexity on dev set: 190.50
+2018-05-03 05:27:13,772 - DEBUG - Epoch=2, iteration=600
+2018-05-03 05:27:17,905 - INFO - current perplexity on dev set: 187.23
+2018-05-03 05:27:30,202 - DEBUG - Epoch=2, iteration=700
+2018-05-03 05:27:34,342 - INFO - current perplexity on dev set: 184.42
+2018-05-03 05:27:46,653 - DEBUG - Epoch=2, iteration=800
+2018-05-03 05:27:50,822 - INFO - current perplexity on dev set: 181.55
+2018-05-03 05:28:03,094 - DEBUG - Epoch=2, iteration=900
+2018-05-03 05:28:07,154 - INFO - current perplexity on dev set: 178.22
+2018-05-03 05:28:19,483 - DEBUG - Epoch=2, iteration=1000
+2018-05-03 05:28:23,628 - INFO - current perplexity on dev set: 175.69
+2018-05-03 05:28:35,943 - DEBUG - Epoch=2, iteration=1100
+2018-05-03 05:28:40,084 - INFO - current perplexity on dev set: 172.88
+2018-05-03 05:28:52,381 - DEBUG - Epoch=2, iteration=1200
+2018-05-03 05:28:56,545 - INFO - current perplexity on dev set: 170.43
+2018-05-03 05:29:08,817 - DEBUG - Epoch=2, iteration=1300
+2018-05-03 05:29:12,997 - INFO - current perplexity on dev set: 167.83
+2018-05-03 05:29:25,281 - DEBUG - Epoch=2, iteration=1400
+2018-05-03 05:29:29,413 - INFO - current perplexity on dev set: 165.56
+2018-05-03 05:29:41,724 - DEBUG - Epoch=2, iteration=1500
+2018-05-03 05:29:46,011 - INFO - current perplexity on dev set: 163.47
+2018-05-03 05:29:58,398 - DEBUG - Epoch=2, iteration=1600
+2018-05-03 05:30:02,636 - INFO - current perplexity on dev set: 161.09
+2018-05-03 05:30:14,984 - DEBUG - Epoch=2, iteration=1700
+2018-05-03 05:30:19,164 - INFO - current perplexity on dev set: 158.69
+2018-05-03 05:30:31,536 - DEBUG - Epoch=2, iteration=1800
+2018-05-03 05:30:35,752 - INFO - current perplexity on dev set: 156.98
+2018-05-03 05:30:48,121 - DEBUG - Epoch=2, iteration=1900
+2018-05-03 05:30:52,268 - INFO - current perplexity on dev set: 155.01
+2018-05-03 05:31:04,634 - DEBUG - Epoch=2, iteration=2000
+2018-05-03 05:31:08,706 - INFO - current perplexity on dev set: 153.45
+2018-05-03 05:31:21,011 - DEBUG - Epoch=2, iteration=2100
+2018-05-03 05:31:25,089 - INFO - current perplexity on dev set: 152.16
+2018-05-03 05:31:37,411 - DEBUG - Epoch=2, iteration=2200
+2018-05-03 05:31:41,536 - INFO - current perplexity on dev set: 149.68
+2018-05-03 05:31:53,847 - DEBUG - Epoch=2, iteration=2300
+2018-05-03 05:31:57,875 - INFO - current perplexity on dev set: 148.20
+2018-05-03 05:32:10,226 - DEBUG - Epoch=2, iteration=2400
+2018-05-03 05:32:14,261 - INFO - current perplexity on dev set: 146.78
+2018-05-03 05:32:14,997 - INFO - Perplexity on training data after epoch 2: 188.07
+2018-05-03 05:32:30,269 - DEBUG - Epoch=3, iteration=100
+2018-05-03 05:32:34,351 - INFO - current perplexity on dev set: 145.57
+2018-05-03 05:32:46,635 - DEBUG - Epoch=3, iteration=200
+2018-05-03 05:32:50,761 - INFO - current perplexity on dev set: 144.16
+2018-05-03 05:33:03,114 - DEBUG - Epoch=3, iteration=300
+2018-05-03 05:33:07,250 - INFO - current perplexity on dev set: 142.60
+2018-05-03 05:33:19,583 - DEBUG - Epoch=3, iteration=400
+2018-05-03 05:33:23,734 - INFO - current perplexity on dev set: 140.77
+2018-05-03 05:33:36,077 - DEBUG - Epoch=3, iteration=500
+2018-05-03 05:33:40,223 - INFO - current perplexity on dev set: 139.53
+2018-05-03 05:33:52,582 - DEBUG - Epoch=3, iteration=600
+2018-05-03 05:33:56,734 - INFO - current perplexity on dev set: 138.03
+2018-05-03 05:34:09,102 - DEBUG - Epoch=3, iteration=700
+2018-05-03 05:34:13,269 - INFO - current perplexity on dev set: 136.97
+2018-05-03 05:34:25,569 - DEBUG - Epoch=3, iteration=800
+2018-05-03 05:34:29,682 - INFO - current perplexity on dev set: 135.91
+2018-05-03 05:34:41,995 - DEBUG - Epoch=3, iteration=900
+2018-05-03 05:34:46,144 - INFO - current perplexity on dev set: 134.38
+2018-05-03 05:34:58,482 - DEBUG - Epoch=3, iteration=1000
+2018-05-03 05:35:02,631 - INFO - current perplexity on dev set: 133.43
+2018-05-03 05:35:14,983 - DEBUG - Epoch=3, iteration=1100
+2018-05-03 05:35:19,120 - INFO - current perplexity on dev set: 132.20
+2018-05-03 05:35:31,423 - DEBUG - Epoch=3, iteration=1200
+2018-05-03 05:35:35,526 - INFO - current perplexity on dev set: 131.20
+2018-05-03 05:35:47,821 - DEBUG - Epoch=3, iteration=1300
+2018-05-03 05:35:51,972 - INFO - current perplexity on dev set: 130.12
+2018-05-03 05:36:04,352 - DEBUG - Epoch=3, iteration=1400
+2018-05-03 05:36:08,538 - INFO - current perplexity on dev set: 129.11
+2018-05-03 05:36:20,892 - DEBUG - Epoch=3, iteration=1500
+2018-05-03 05:36:24,996 - INFO - current perplexity on dev set: 128.32
+2018-05-03 05:36:37,353 - DEBUG - Epoch=3, iteration=1600
+2018-05-03 05:36:41,506 - INFO - current perplexity on dev set: 127.12
+2018-05-03 05:36:53,842 - DEBUG - Epoch=3, iteration=1700
+2018-05-03 05:36:57,983 - INFO - current perplexity on dev set: 125.97
+2018-05-03 05:37:10,324 - DEBUG - Epoch=3, iteration=1800
+2018-05-03 05:37:14,478 - INFO - current perplexity on dev set: 125.15
+2018-05-03 05:37:26,828 - DEBUG - Epoch=3, iteration=1900
+2018-05-03 05:37:30,950 - INFO - current perplexity on dev set: 124.31
+2018-05-03 05:37:43,266 - DEBUG - Epoch=3, iteration=2000
+2018-05-03 05:37:47,360 - INFO - current perplexity on dev set: 123.69
+2018-05-03 05:37:59,695 - DEBUG - Epoch=3, iteration=2100
+2018-05-03 05:38:03,821 - INFO - current perplexity on dev set: 123.25
+2018-05-03 05:38:16,176 - DEBUG - Epoch=3, iteration=2200
+2018-05-03 05:38:20,311 - INFO - current perplexity on dev set: 121.93
+2018-05-03 05:38:32,622 - DEBUG - Epoch=3, iteration=2300
+2018-05-03 05:38:36,745 - INFO - current perplexity on dev set: 121.32
+2018-05-03 05:38:49,071 - DEBUG - Epoch=3, iteration=2400
+2018-05-03 05:38:53,186 - INFO - current perplexity on dev set: 120.63
+2018-05-03 05:38:53,926 - INFO - Perplexity on training data after epoch 3: 138.16
+2018-05-03 05:39:09,249 - DEBUG - Epoch=4, iteration=100
+2018-05-03 05:39:13,361 - INFO - current perplexity on dev set: 120.20
+2018-05-03 05:39:25,569 - DEBUG - Epoch=4, iteration=200
+2018-05-03 05:39:29,665 - INFO - current perplexity on dev set: 119.46
+2018-05-03 05:39:41,911 - DEBUG - Epoch=4, iteration=300
+2018-05-03 05:39:46,072 - INFO - current perplexity on dev set: 118.89
+2018-05-03 05:39:58,367 - DEBUG - Epoch=4, iteration=400
+2018-05-03 05:40:02,524 - INFO - current perplexity on dev set: 117.77
+2018-05-03 05:40:14,736 - DEBUG - Epoch=4, iteration=500
+2018-05-03 05:40:18,932 - INFO - current perplexity on dev set: 117.19
+2018-05-03 05:40:31,183 - DEBUG - Epoch=4, iteration=600
+2018-05-03 05:40:35,325 - INFO - current perplexity on dev set: 116.30
+2018-05-03 05:40:47,633 - DEBUG - Epoch=4, iteration=700
+2018-05-03 05:40:51,791 - INFO - current perplexity on dev set: 115.93
+2018-05-03 05:41:04,119 - DEBUG - Epoch=4, iteration=800
+2018-05-03 05:41:08,198 - INFO - current perplexity on dev set: 115.41
+2018-05-03 05:41:20,485 - DEBUG - Epoch=4, iteration=900
+2018-05-03 05:41:24,577 - INFO - current perplexity on dev set: 114.49
+2018-05-03 05:41:36,933 - DEBUG - Epoch=4, iteration=1000
+2018-05-03 05:41:41,026 - INFO - current perplexity on dev set: 114.08
+2018-05-03 05:41:53,366 - DEBUG - Epoch=4, iteration=1100
+2018-05-03 05:41:57,463 - INFO - current perplexity on dev set: 113.43
+2018-05-03 05:42:09,766 - DEBUG - Epoch=4, iteration=1200
+2018-05-03 05:42:13,889 - INFO - current perplexity on dev set: 112.87
+2018-05-03 05:42:26,176 - DEBUG - Epoch=4, iteration=1300
+2018-05-03 05:42:30,235 - INFO - current perplexity on dev set: 112.31
+2018-05-03 05:42:42,528 - DEBUG - Epoch=4, iteration=1400
+2018-05-03 05:42:46,562 - INFO - current perplexity on dev set: 111.76
+2018-05-03 05:42:58,801 - DEBUG - Epoch=4, iteration=1500
+2018-05-03 05:43:02,849 - INFO - current perplexity on dev set: 111.36
+2018-05-03 05:43:15,119 - DEBUG - Epoch=4, iteration=1600
+2018-05-03 05:43:19,158 - INFO - current perplexity on dev set: 110.62
+2018-05-03 05:43:31,429 - DEBUG - Epoch=4, iteration=1700
+2018-05-03 05:43:35,511 - INFO - current perplexity on dev set: 109.95
+2018-05-03 05:43:47,766 - DEBUG - Epoch=4, iteration=1800
+2018-05-03 05:43:51,828 - INFO - current perplexity on dev set: 109.42
+2018-05-03 05:44:04,152 - DEBUG - Epoch=4, iteration=1900
+2018-05-03 05:44:08,285 - INFO - current perplexity on dev set: 108.97
+2018-05-03 05:44:20,586 - DEBUG - Epoch=4, iteration=2000
+2018-05-03 05:44:24,747 - INFO - current perplexity on dev set: 108.81
+2018-05-03 05:44:37,085 - DEBUG - Epoch=4, iteration=2100
+2018-05-03 05:44:41,208 - INFO - current perplexity on dev set: 108.64
+2018-05-03 05:44:53,498 - DEBUG - Epoch=4, iteration=2200
+2018-05-03 05:44:57,657 - INFO - current perplexity on dev set: 107.72
+2018-05-03 05:45:09,968 - DEBUG - Epoch=4, iteration=2300
+2018-05-03 05:45:14,070 - INFO - current perplexity on dev set: 107.35
+2018-05-03 05:45:26,348 - DEBUG - Epoch=4, iteration=2400
+2018-05-03 05:45:30,424 - INFO - current perplexity on dev set: 106.94
+2018-05-03 05:45:31,158 - INFO - Perplexity on training data after epoch 4: 113.05
+2018-05-03 05:45:46,481 - DEBUG - Epoch=5, iteration=100
+2018-05-03 05:45:50,633 - INFO - current perplexity on dev set: 106.79
+2018-05-03 05:46:03,008 - DEBUG - Epoch=5, iteration=200
+2018-05-03 05:46:07,150 - INFO - current perplexity on dev set: 106.32
+2018-05-03 05:46:19,553 - DEBUG - Epoch=5, iteration=300
+2018-05-03 05:46:23,698 - INFO - current perplexity on dev set: 106.11
+2018-05-03 05:46:36,024 - DEBUG - Epoch=5, iteration=400
+2018-05-03 05:46:40,136 - INFO - current perplexity on dev set: 105.30
+2018-05-03 05:46:52,445 - DEBUG - Epoch=5, iteration=500
+2018-05-03 05:46:56,529 - INFO - current perplexity on dev set: 104.96
+2018-05-03 05:47:08,859 - DEBUG - Epoch=5, iteration=600
+2018-05-03 05:47:12,926 - INFO - current perplexity on dev set: 104.33
+2018-05-03 05:47:25,211 - DEBUG - Epoch=5, iteration=700
+2018-05-03 05:47:29,272 - INFO - current perplexity on dev set: 104.19
+2018-05-03 05:47:41,546 - DEBUG - Epoch=5, iteration=800
+2018-05-03 05:47:45,558 - INFO - current perplexity on dev set: 104.00
+2018-05-03 05:47:57,860 - DEBUG - Epoch=5, iteration=900
+2018-05-03 05:48:02,015 - INFO - current perplexity on dev set: 103.26
+2018-05-03 05:48:14,353 - DEBUG - Epoch=5, iteration=1000
+2018-05-03 05:48:18,449 - INFO - current perplexity on dev set: 103.04
+2018-05-03 05:48:30,756 - DEBUG - Epoch=5, iteration=1100
+2018-05-03 05:48:34,899 - INFO - current perplexity on dev set: 102.68
+2018-05-03 05:48:47,259 - DEBUG - Epoch=5, iteration=1200
+2018-05-03 05:48:51,373 - INFO - current perplexity on dev set: 102.23
+2018-05-03 05:49:03,657 - DEBUG - Epoch=5, iteration=1300
+2018-05-03 05:49:07,856 - INFO - current perplexity on dev set: 101.87
+2018-05-03 05:49:20,157 - DEBUG - Epoch=5, iteration=1400
+2018-05-03 05:49:24,386 - INFO - current perplexity on dev set: 101.55
+2018-05-03 05:49:36,619 - DEBUG - Epoch=5, iteration=1500
+2018-05-03 05:49:40,749 - INFO - current perplexity on dev set: 101.28
+2018-05-03 05:49:53,043 - DEBUG - Epoch=5, iteration=1600
+2018-05-03 05:49:57,245 - INFO - current perplexity on dev set: 100.73
+2018-05-03 05:50:09,580 - DEBUG - Epoch=5, iteration=1700
+2018-05-03 05:50:13,813 - INFO - current perplexity on dev set: 100.27
+2018-05-03 05:50:26,166 - DEBUG - Epoch=5, iteration=1800
+2018-05-03 05:50:30,412 - INFO - current perplexity on dev set: 99.95
+2018-05-03 05:50:42,735 - DEBUG - Epoch=5, iteration=1900
+2018-05-03 05:50:46,917 - INFO - current perplexity on dev set: 99.63
+2018-05-03 05:50:59,259 - DEBUG - Epoch=5, iteration=2000
+2018-05-03 05:51:03,391 - INFO - current perplexity on dev set: 99.59
+2018-05-03 05:51:15,671 - DEBUG - Epoch=5, iteration=2100
+2018-05-03 05:51:19,694 - INFO - current perplexity on dev set: 99.65
+2018-05-03 05:51:31,962 - DEBUG - Epoch=5, iteration=2200
+2018-05-03 05:51:36,028 - INFO - current perplexity on dev set: 98.90
+2018-05-03 05:51:48,307 - DEBUG - Epoch=5, iteration=2300
+2018-05-03 05:51:52,410 - INFO - current perplexity on dev set: 98.62
+2018-05-03 05:52:04,739 - DEBUG - Epoch=5, iteration=2400
+2018-05-03 05:52:08,880 - INFO - current perplexity on dev set: 98.40
+2018-05-03 05:52:09,623 - INFO - Perplexity on training data after epoch 5: 97.32
+2018-05-03 05:52:24,924 - DEBUG - Epoch=6, iteration=100
+2018-05-03 05:52:29,098 - INFO - current perplexity on dev set: 98.33
+2018-05-03 05:52:41,408 - DEBUG - Epoch=6, iteration=200
+2018-05-03 05:52:45,490 - INFO - current perplexity on dev set: 98.05
+2018-05-03 05:52:57,841 - DEBUG - Epoch=6, iteration=300
+2018-05-03 05:53:01,994 - INFO - current perplexity on dev set: 97.93
+2018-05-03 05:53:14,328 - DEBUG - Epoch=6, iteration=400
+2018-05-03 05:53:18,468 - INFO - current perplexity on dev set: 97.25
+2018-05-03 05:53:30,794 - DEBUG - Epoch=6, iteration=500
+2018-05-03 05:53:34,924 - INFO - current perplexity on dev set: 97.02
+2018-05-03 05:53:47,264 - DEBUG - Epoch=6, iteration=600
+2018-05-03 05:53:51,403 - INFO - current perplexity on dev set: 96.57
+2018-05-03 05:54:03,694 - DEBUG - Epoch=6, iteration=700
+2018-05-03 05:54:07,876 - INFO - current perplexity on dev set: 96.55
+2018-05-03 05:54:20,220 - DEBUG - Epoch=6, iteration=800
+2018-05-03 05:54:24,363 - INFO - current perplexity on dev set: 96.47
+2018-05-03 05:54:36,687 - DEBUG - Epoch=6, iteration=900
+2018-05-03 05:54:40,838 - INFO - current perplexity on dev set: 95.87
+2018-05-03 05:54:53,113 - DEBUG - Epoch=6, iteration=1000
+2018-05-03 05:54:57,196 - INFO - current perplexity on dev set: 95.74
+2018-05-03 05:55:09,472 - DEBUG - Epoch=6, iteration=1100
+2018-05-03 05:55:13,607 - INFO - current perplexity on dev set: 95.47
+2018-05-03 05:55:25,957 - DEBUG - Epoch=6, iteration=1200
+2018-05-03 05:55:30,137 - INFO - current perplexity on dev set: 95.18
+2018-05-03 05:55:42,448 - DEBUG - Epoch=6, iteration=1300
+2018-05-03 05:55:46,580 - INFO - current perplexity on dev set: 94.93
+2018-05-03 05:55:58,875 - DEBUG - Epoch=6, iteration=1400
+2018-05-03 05:56:02,995 - INFO - current perplexity on dev set: 94.65
+2018-05-03 05:56:15,272 - DEBUG - Epoch=6, iteration=1500
+2018-05-03 05:56:19,391 - INFO - current perplexity on dev set: 94.61
+2018-05-03 05:56:31,670 - DEBUG - Epoch=6, iteration=1600
+2018-05-03 05:56:35,813 - INFO - current perplexity on dev set: 94.12
+2018-05-03 05:56:48,121 - DEBUG - Epoch=6, iteration=1700
+2018-05-03 05:56:52,225 - INFO - current perplexity on dev set: 93.78
+2018-05-03 05:57:04,563 - DEBUG - Epoch=6, iteration=1800
+2018-05-03 05:57:08,875 - INFO - current perplexity on dev set: 93.53
+2018-05-03 05:57:21,286 - DEBUG - Epoch=6, iteration=1900
+2018-05-03 05:57:25,531 - INFO - current perplexity on dev set: 93.35
+2018-05-03 05:57:37,909 - DEBUG - Epoch=6, iteration=2000
+2018-05-03 05:57:42,094 - INFO - current perplexity on dev set: 93.44
+2018-05-03 05:57:54,360 - DEBUG - Epoch=6, iteration=2100
+2018-05-03 05:57:58,549 - INFO - current perplexity on dev set: 93.49
+2018-05-03 05:58:10,863 - DEBUG - Epoch=6, iteration=2200
+2018-05-03 05:58:15,133 - INFO - current perplexity on dev set: 92.98
+2018-05-03 05:58:27,477 - DEBUG - Epoch=6, iteration=2300
+2018-05-03 05:58:31,630 - INFO - current perplexity on dev set: 92.67
+2018-05-03 05:58:43,894 - DEBUG - Epoch=6, iteration=2400
+2018-05-03 05:58:48,011 - INFO - current perplexity on dev set: 92.60
+2018-05-03 05:58:48,750 - INFO - Perplexity on training data after epoch 6: 86.01
+2018-05-03 05:59:04,151 - DEBUG - Epoch=7, iteration=100
+2018-05-03 05:59:08,437 - INFO - current perplexity on dev set: 92.59
+2018-05-03 05:59:20,837 - DEBUG - Epoch=7, iteration=200
+2018-05-03 05:59:25,064 - INFO - current perplexity on dev set: 92.41
+2018-05-03 05:59:37,363 - DEBUG - Epoch=7, iteration=300
+2018-05-03 05:59:41,530 - INFO - current perplexity on dev set: 92.34
+2018-05-03 05:59:53,849 - DEBUG - Epoch=7, iteration=400
+2018-05-03 05:59:58,045 - INFO - current perplexity on dev set: 91.79
+2018-05-03 06:00:10,332 - DEBUG - Epoch=7, iteration=500
+2018-05-03 06:00:14,484 - INFO - current perplexity on dev set: 91.62
+2018-05-03 06:00:26,783 - DEBUG - Epoch=7, iteration=600
+2018-05-03 06:00:31,053 - INFO - current perplexity on dev set: 91.25
+2018-05-03 06:00:43,366 - DEBUG - Epoch=7, iteration=700
+2018-05-03 06:00:47,592 - INFO - current perplexity on dev set: 91.21
+2018-05-03 06:00:59,846 - DEBUG - Epoch=7, iteration=800
+2018-05-03 06:01:04,101 - INFO - current perplexity on dev set: 91.21
+2018-05-03 06:01:16,516 - DEBUG - Epoch=7, iteration=900
+2018-05-03 06:01:20,679 - INFO - current perplexity on dev set: 90.80
+2018-05-03 06:01:33,072 - DEBUG - Epoch=7, iteration=1000
+2018-05-03 06:01:37,194 - INFO - current perplexity on dev set: 90.70
+2018-05-03 06:01:49,576 - DEBUG - Epoch=7, iteration=1100
+2018-05-03 06:01:53,816 - INFO - current perplexity on dev set: 90.56
+2018-05-03 06:02:06,223 - DEBUG - Epoch=7, iteration=1200
+2018-05-03 06:02:10,429 - INFO - current perplexity on dev set: 90.27
+2018-05-03 06:02:22,772 - DEBUG - Epoch=7, iteration=1300
+2018-05-03 06:02:26,910 - INFO - current perplexity on dev set: 90.12
+2018-05-03 06:02:39,248 - DEBUG - Epoch=7, iteration=1400
+2018-05-03 06:02:43,376 - INFO - current perplexity on dev set: 89.94
+2018-05-03 06:02:55,685 - DEBUG - Epoch=7, iteration=1500
+2018-05-03 06:02:59,771 - INFO - current perplexity on dev set: 89.98
+2018-05-03 06:03:12,008 - DEBUG - Epoch=7, iteration=1600
+2018-05-03 06:03:16,034 - INFO - current perplexity on dev set: 89.46
+2018-05-03 06:03:28,326 - DEBUG - Epoch=7, iteration=1700
+2018-05-03 06:03:32,355 - INFO - current perplexity on dev set: 89.28
+2018-05-03 06:03:44,610 - DEBUG - Epoch=7, iteration=1800
+2018-05-03 06:03:48,682 - INFO - current perplexity on dev set: 89.11
+2018-05-03 06:04:00,941 - DEBUG - Epoch=7, iteration=1900
+2018-05-03 06:04:05,037 - INFO - current perplexity on dev set: 88.97
+2018-05-03 06:04:17,345 - DEBUG - Epoch=7, iteration=2000
+2018-05-03 06:04:21,552 - INFO - current perplexity on dev set: 89.13
+2018-05-03 06:04:33,895 - DEBUG - Epoch=7, iteration=2100
+2018-05-03 06:04:38,090 - INFO - current perplexity on dev set: 89.22
+2018-05-03 06:04:50,449 - DEBUG - Epoch=7, iteration=2200
+2018-05-03 06:04:54,587 - INFO - current perplexity on dev set: 88.94
+2018-05-03 06:05:06,922 - DEBUG - Epoch=7, iteration=2300
+2018-05-03 06:05:11,103 - INFO - current perplexity on dev set: 88.51
+2018-05-03 06:05:23,425 - DEBUG - Epoch=7, iteration=2400
+2018-05-03 06:05:27,489 - INFO - current perplexity on dev set: 88.51
+2018-05-03 06:05:28,223 - INFO - Perplexity on training data after epoch 7: 77.32
+2018-05-03 06:05:43,586 - DEBUG - Epoch=8, iteration=100
+2018-05-03 06:05:47,755 - INFO - current perplexity on dev set: 88.59
+2018-05-03 06:06:00,113 - DEBUG - Epoch=8, iteration=200
+2018-05-03 06:06:04,249 - INFO - current perplexity on dev set: 88.41
+2018-05-03 06:06:16,588 - DEBUG - Epoch=8, iteration=300
+2018-05-03 06:06:20,584 - INFO - current perplexity on dev set: 88.45
+2018-05-03 06:06:32,857 - DEBUG - Epoch=8, iteration=400
+2018-05-03 06:06:36,937 - INFO - current perplexity on dev set: 87.97
+2018-05-03 06:06:49,192 - DEBUG - Epoch=8, iteration=500
+2018-05-03 06:06:53,241 - INFO - current perplexity on dev set: 87.79
+2018-05-03 06:07:05,472 - DEBUG - Epoch=8, iteration=600
+2018-05-03 06:07:09,537 - INFO - current perplexity on dev set: 87.45
+2018-05-03 06:07:21,875 - DEBUG - Epoch=8, iteration=700
+2018-05-03 06:07:25,960 - INFO - current perplexity on dev set: 87.42
+2018-05-03 06:07:38,274 - DEBUG - Epoch=8, iteration=800
+2018-05-03 06:07:42,417 - INFO - current perplexity on dev set: 87.46
+2018-05-03 06:07:54,721 - DEBUG - Epoch=8, iteration=900
+2018-05-03 06:07:58,811 - INFO - current perplexity on dev set: 87.19
+2018-05-03 06:08:11,130 - DEBUG - Epoch=8, iteration=1000
+2018-05-03 06:08:15,274 - INFO - current perplexity on dev set: 87.09
+2018-05-03 06:08:27,555 - DEBUG - Epoch=8, iteration=1100
+2018-05-03 06:08:31,571 - INFO - current perplexity on dev set: 87.01
+2018-05-03 06:08:43,818 - DEBUG - Epoch=8, iteration=1200
+2018-05-03 06:08:47,941 - INFO - current perplexity on dev set: 86.76
+2018-05-03 06:09:00,274 - DEBUG - Epoch=8, iteration=1300
+2018-05-03 06:09:04,436 - INFO - current perplexity on dev set: 86.67
+2018-05-03 06:09:16,757 - DEBUG - Epoch=8, iteration=1400
+2018-05-03 06:09:20,972 - INFO - current perplexity on dev set: 86.58
+2018-05-03 06:09:33,269 - DEBUG - Epoch=8, iteration=1500
+2018-05-03 06:09:37,415 - INFO - current perplexity on dev set: 86.64
+2018-05-03 06:09:49,738 - DEBUG - Epoch=8, iteration=1600
+2018-05-03 06:09:54,030 - INFO - current perplexity on dev set: 86.15
+2018-05-03 06:10:06,329 - DEBUG - Epoch=8, iteration=1700
+2018-05-03 06:10:10,485 - INFO - current perplexity on dev set: 86.06
+2018-05-03 06:10:22,812 - DEBUG - Epoch=8, iteration=1800
+2018-05-03 06:10:26,972 - INFO - current perplexity on dev set: 85.95
+2018-05-03 06:10:39,245 - DEBUG - Epoch=8, iteration=1900
+2018-05-03 06:10:43,505 - INFO - current perplexity on dev set: 85.81
+2018-05-03 06:10:55,851 - DEBUG - Epoch=8, iteration=2000
+2018-05-03 06:11:00,028 - INFO - current perplexity on dev set: 86.01
+2018-05-03 06:11:12,389 - DEBUG - Epoch=8, iteration=2100
+2018-05-03 06:11:16,614 - INFO - current perplexity on dev set: 86.12
+2018-05-03 06:11:28,971 - DEBUG - Epoch=8, iteration=2200
+2018-05-03 06:11:33,132 - INFO - current perplexity on dev set: 85.94
+2018-05-03 06:11:45,489 - DEBUG - Epoch=8, iteration=2300
+2018-05-03 06:11:49,650 - INFO - current perplexity on dev set: 85.50
+2018-05-03 06:12:01,964 - DEBUG - Epoch=8, iteration=2400
+2018-05-03 06:12:06,196 - INFO - current perplexity on dev set: 85.57
+2018-05-03 06:12:06,939 - INFO - Perplexity on training data after epoch 8: 70.35
+2018-05-03 06:12:22,355 - DEBUG - Epoch=9, iteration=100
+2018-05-03 06:12:26,546 - INFO - current perplexity on dev set: 85.70
+2018-05-03 06:12:38,873 - DEBUG - Epoch=9, iteration=200
+2018-05-03 06:12:43,029 - INFO - current perplexity on dev set: 85.53
+2018-05-03 06:12:55,426 - DEBUG - Epoch=9, iteration=300
+2018-05-03 06:12:59,669 - INFO - current perplexity on dev set: 85.62
+2018-05-03 06:13:12,027 - DEBUG - Epoch=9, iteration=400
+2018-05-03 06:13:16,244 - INFO - current perplexity on dev set: 85.16
+2018-05-03 06:13:28,568 - DEBUG - Epoch=9, iteration=500
+2018-05-03 06:13:32,728 - INFO - current perplexity on dev set: 85.04
+2018-05-03 06:13:45,021 - DEBUG - Epoch=9, iteration=600
+2018-05-03 06:13:49,278 - INFO - current perplexity on dev set: 84.70
+2018-05-03 06:14:01,689 - DEBUG - Epoch=9, iteration=700
+2018-05-03 06:14:05,957 - INFO - current perplexity on dev set: 84.67
+2018-05-03 06:14:18,295 - DEBUG - Epoch=9, iteration=800
+2018-05-03 06:14:22,466 - INFO - current perplexity on dev set: 84.72
+2018-05-03 06:14:34,820 - DEBUG - Epoch=9, iteration=900
+2018-05-03 06:14:39,016 - INFO - current perplexity on dev set: 84.51
+2018-05-03 06:14:51,377 - DEBUG - Epoch=9, iteration=1000
+2018-05-03 06:14:55,583 - INFO - current perplexity on dev set: 84.44
+2018-05-03 06:15:07,931 - DEBUG - Epoch=9, iteration=1100
+2018-05-03 06:15:12,028 - INFO - current perplexity on dev set: 84.44
+2018-05-03 06:15:24,412 - DEBUG - Epoch=9, iteration=1200
+2018-05-03 06:15:28,701 - INFO - current perplexity on dev set: 84.16
+2018-05-03 06:15:41,112 - DEBUG - Epoch=9, iteration=1300
+2018-05-03 06:15:45,324 - INFO - current perplexity on dev set: 84.15
+2018-05-03 06:15:57,635 - DEBUG - Epoch=9, iteration=1400
+2018-05-03 06:16:01,814 - INFO - current perplexity on dev set: 84.10
+2018-05-03 06:16:14,156 - DEBUG - Epoch=9, iteration=1500
+2018-05-03 06:16:18,318 - INFO - current perplexity on dev set: 84.17
+2018-05-03 06:16:30,615 - DEBUG - Epoch=9, iteration=1600
+2018-05-03 06:16:34,658 - INFO - current perplexity on dev set: 83.75
+2018-05-03 06:16:46,946 - DEBUG - Epoch=9, iteration=1700
+2018-05-03 06:16:51,096 - INFO - current perplexity on dev set: 83.69
+2018-05-03 06:17:03,357 - DEBUG - Epoch=9, iteration=1800
+2018-05-03 06:17:07,405 - INFO - current perplexity on dev set: 83.61
+2018-05-03 06:17:19,691 - DEBUG - Epoch=9, iteration=1900
+2018-05-03 06:17:23,775 - INFO - current perplexity on dev set: 83.50
+2018-05-03 06:17:36,039 - DEBUG - Epoch=9, iteration=2000
+2018-05-03 06:17:40,083 - INFO - current perplexity on dev set: 83.74
+2018-05-03 06:17:52,359 - DEBUG - Epoch=9, iteration=2100
+2018-05-03 06:17:56,486 - INFO - current perplexity on dev set: 83.89
+2018-05-03 06:18:08,799 - DEBUG - Epoch=9, iteration=2200
+2018-05-03 06:18:13,001 - INFO - current perplexity on dev set: 83.70
+2018-05-03 06:18:25,328 - DEBUG - Epoch=9, iteration=2300
+2018-05-03 06:18:29,459 - INFO - current perplexity on dev set: 83.30
+2018-05-03 06:18:41,727 - DEBUG - Epoch=9, iteration=2400
+2018-05-03 06:18:45,812 - INFO - current perplexity on dev set: 83.39
+2018-05-03 06:18:46,545 - INFO - Perplexity on training data after epoch 9: 64.58
+2018-05-03 06:19:01,787 - DEBUG - Epoch=10, iteration=100
+2018-05-03 06:19:05,892 - INFO - current perplexity on dev set: 83.59
+2018-05-03 06:19:18,157 - DEBUG - Epoch=10, iteration=200
+2018-05-03 06:19:22,306 - INFO - current perplexity on dev set: 83.42
+2018-05-03 06:19:34,695 - DEBUG - Epoch=10, iteration=300
+2018-05-03 06:19:38,915 - INFO - current perplexity on dev set: 83.54
+2018-05-03 06:19:51,215 - DEBUG - Epoch=10, iteration=400
+2018-05-03 06:19:55,361 - INFO - current perplexity on dev set: 83.06
+2018-05-03 06:20:07,625 - DEBUG - Epoch=10, iteration=500
+2018-05-03 06:20:11,774 - INFO - current perplexity on dev set: 82.99
+2018-05-03 06:20:24,046 - DEBUG - Epoch=10, iteration=600
+2018-05-03 06:20:28,185 - INFO - current perplexity on dev set: 82.70
+2018-05-03 06:20:40,470 - DEBUG - Epoch=10, iteration=700
+2018-05-03 06:20:44,687 - INFO - current perplexity on dev set: 82.65
+2018-05-03 06:20:57,003 - DEBUG - Epoch=10, iteration=800
+2018-05-03 06:21:01,207 - INFO - current perplexity on dev set: 82.71
+2018-05-03 06:21:13,519 - DEBUG - Epoch=10, iteration=900
+2018-05-03 06:21:17,764 - INFO - current perplexity on dev set: 82.53
+2018-05-03 06:21:30,156 - DEBUG - Epoch=10, iteration=1000
+2018-05-03 06:21:34,332 - INFO - current perplexity on dev set: 82.48
+2018-05-03 06:21:46,664 - DEBUG - Epoch=10, iteration=1100
+2018-05-03 06:21:50,701 - INFO - current perplexity on dev set: 82.53
+2018-05-03 06:22:03,009 - DEBUG - Epoch=10, iteration=1200
+2018-05-03 06:22:07,177 - INFO - current perplexity on dev set: 82.27
+2018-05-03 06:22:19,526 - DEBUG - Epoch=10, iteration=1300
+2018-05-03 06:22:23,689 - INFO - current perplexity on dev set: 82.31
+2018-05-03 06:22:36,065 - DEBUG - Epoch=10, iteration=1400
+2018-05-03 06:22:40,245 - INFO - current perplexity on dev set: 82.28
+2018-05-03 06:22:52,556 - DEBUG - Epoch=10, iteration=1500
+2018-05-03 06:22:56,615 - INFO - current perplexity on dev set: 82.34
+2018-05-03 06:23:08,919 - DEBUG - Epoch=10, iteration=1600
+2018-05-03 06:23:13,004 - INFO - current perplexity on dev set: 82.00
+2018-05-03 06:23:25,298 - DEBUG - Epoch=10, iteration=1700
+2018-05-03 06:23:29,391 - INFO - current perplexity on dev set: 81.96
+2018-05-03 06:23:41,713 - DEBUG - Epoch=10, iteration=1800
+2018-05-03 06:23:45,799 - INFO - current perplexity on dev set: 81.89
+2018-05-03 06:23:58,088 - DEBUG - Epoch=10, iteration=1900
+2018-05-03 06:24:02,139 - INFO - current perplexity on dev set: 81.82
+2018-05-03 06:24:14,360 - DEBUG - Epoch=10, iteration=2000
+2018-05-03 06:24:18,370 - INFO - current perplexity on dev set: 82.09
+2018-05-03 06:24:30,607 - DEBUG - Epoch=10, iteration=2100
+2018-05-03 06:24:34,694 - INFO - current perplexity on dev set: 82.25
+2018-05-03 06:24:46,991 - DEBUG - Epoch=10, iteration=2200
+2018-05-03 06:24:51,194 - INFO - current perplexity on dev set: 82.09
+2018-05-03 06:25:03,507 - DEBUG - Epoch=10, iteration=2300
+2018-05-03 06:25:07,607 - INFO - current perplexity on dev set: 81.71
+2018-05-03 06:25:19,921 - DEBUG - Epoch=10, iteration=2400
+2018-05-03 06:25:24,048 - INFO - current perplexity on dev set: 81.81
+2018-05-03 06:25:24,788 - INFO - Perplexity on training data after epoch 10: 59.69
+2018-05-03 06:25:40,106 - DEBUG - Epoch=11, iteration=100
+2018-05-03 06:25:44,181 - INFO - current perplexity on dev set: 82.08
+2018-05-03 06:25:56,494 - DEBUG - Epoch=11, iteration=200
+2018-05-03 06:26:00,552 - INFO - current perplexity on dev set: 81.91
+2018-05-03 06:26:12,853 - DEBUG - Epoch=11, iteration=300
+2018-05-03 06:26:16,951 - INFO - current perplexity on dev set: 82.04
+2018-05-03 06:26:29,275 - DEBUG - Epoch=11, iteration=400
+2018-05-03 06:26:33,372 - INFO - current perplexity on dev set: 81.58
+2018-05-03 06:26:45,691 - DEBUG - Epoch=11, iteration=500
+2018-05-03 06:26:49,731 - INFO - current perplexity on dev set: 81.53
+2018-05-03 06:27:02,011 - DEBUG - Epoch=11, iteration=600
+2018-05-03 06:27:06,067 - INFO - current perplexity on dev set: 81.22
+2018-05-03 06:27:18,340 - DEBUG - Epoch=11, iteration=700
+2018-05-03 06:27:22,369 - INFO - current perplexity on dev set: 81.19
+2018-05-03 06:27:34,676 - DEBUG - Epoch=11, iteration=800
+2018-05-03 06:27:38,760 - INFO - current perplexity on dev set: 81.29
+2018-05-03 06:27:51,109 - DEBUG - Epoch=11, iteration=900
+2018-05-03 06:27:55,294 - INFO - current perplexity on dev set: 81.11
+2018-05-03 06:28:07,703 - DEBUG - Epoch=11, iteration=1000
+2018-05-03 06:28:11,846 - INFO - current perplexity on dev set: 81.07
+2018-05-03 06:28:24,155 - DEBUG - Epoch=11, iteration=1100
+2018-05-03 06:28:28,206 - INFO - current perplexity on dev set: 81.15
+2018-05-03 06:28:40,512 - DEBUG - Epoch=11, iteration=1200
+2018-05-03 06:28:44,587 - INFO - current perplexity on dev set: 80.91
+2018-05-03 06:28:56,918 - DEBUG - Epoch=11, iteration=1300
+2018-05-03 06:29:01,003 - INFO - current perplexity on dev set: 80.98
+2018-05-03 06:29:13,307 - DEBUG - Epoch=11, iteration=1400
+2018-05-03 06:29:17,432 - INFO - current perplexity on dev set: 80.95
+2018-05-03 06:29:29,767 - DEBUG - Epoch=11, iteration=1500
+2018-05-03 06:29:33,918 - INFO - current perplexity on dev set: 81.06
+2018-05-03 06:29:46,261 - DEBUG - Epoch=11, iteration=1600
+2018-05-03 06:29:50,440 - INFO - current perplexity on dev set: 80.75
+2018-05-03 06:30:02,710 - DEBUG - Epoch=11, iteration=1700
+2018-05-03 06:30:06,932 - INFO - current perplexity on dev set: 80.73
+2018-05-03 06:30:19,236 - DEBUG - Epoch=11, iteration=1800
+2018-05-03 06:30:23,424 - INFO - current perplexity on dev set: 80.66
+2018-05-03 06:30:35,745 - DEBUG - Epoch=11, iteration=1900
+2018-05-03 06:30:40,019 - INFO - current perplexity on dev set: 80.64
+2018-05-03 06:30:52,343 - DEBUG - Epoch=11, iteration=2000
+2018-05-03 06:30:56,512 - INFO - current perplexity on dev set: 80.91
+2018-05-03 06:31:08,815 - DEBUG - Epoch=11, iteration=2100
+2018-05-03 06:31:12,918 - INFO - current perplexity on dev set: 81.08
+2018-05-03 06:31:25,236 - DEBUG - Epoch=11, iteration=2200
+2018-05-03 06:31:29,405 - INFO - current perplexity on dev set: 80.92
+2018-05-03 06:31:41,697 - DEBUG - Epoch=11, iteration=2300
+2018-05-03 06:31:45,875 - INFO - current perplexity on dev set: 80.60
+2018-05-03 06:31:58,191 - DEBUG - Epoch=11, iteration=2400
+2018-05-03 06:32:02,448 - INFO - current perplexity on dev set: 80.67
+2018-05-03 06:32:03,193 - INFO - Perplexity on training data after epoch 11: 55.49
+2018-05-03 06:32:18,617 - DEBUG - Epoch=12, iteration=100
+2018-05-03 06:32:22,835 - INFO - current perplexity on dev set: 80.99
+2018-05-03 06:32:35,184 - DEBUG - Epoch=12, iteration=200
+2018-05-03 06:32:39,293 - INFO - current perplexity on dev set: 80.82
+2018-05-03 06:32:51,603 - DEBUG - Epoch=12, iteration=300
+2018-05-03 06:32:55,732 - INFO - current perplexity on dev set: 81.00
+2018-05-03 06:33:07,983 - DEBUG - Epoch=12, iteration=400
+2018-05-03 06:33:12,033 - INFO - current perplexity on dev set: 80.52
+2018-05-03 06:33:24,355 - DEBUG - Epoch=12, iteration=500
+2018-05-03 06:33:28,516 - INFO - current perplexity on dev set: 80.51
+2018-05-03 06:33:40,803 - DEBUG - Epoch=12, iteration=600
+2018-05-03 06:33:44,954 - INFO - current perplexity on dev set: 80.17
+2018-05-03 06:33:57,176 - DEBUG - Epoch=12, iteration=700
+2018-05-03 06:34:01,281 - INFO - current perplexity on dev set: 80.15
+2018-05-03 06:34:13,429 - DEBUG - Epoch=12, iteration=800
+2018-05-03 06:34:17,520 - INFO - current perplexity on dev set: 80.28
+2018-05-03 06:34:29,706 - DEBUG - Epoch=12, iteration=900
+2018-05-03 06:34:33,771 - INFO - current perplexity on dev set: 80.11
+2018-05-03 06:34:45,928 - DEBUG - Epoch=12, iteration=1000
+2018-05-03 06:34:49,987 - INFO - current perplexity on dev set: 80.08
+2018-05-03 06:35:02,177 - DEBUG - Epoch=12, iteration=1100
+2018-05-03 06:35:06,208 - INFO - current perplexity on dev set: 80.19
+2018-05-03 06:35:18,353 - DEBUG - Epoch=12, iteration=1200
+2018-05-03 06:35:22,432 - INFO - current perplexity on dev set: 79.95
+2018-05-03 06:35:34,612 - DEBUG - Epoch=12, iteration=1300
+2018-05-03 06:35:38,754 - INFO - current perplexity on dev set: 80.05
+2018-05-03 06:35:50,963 - DEBUG - Epoch=12, iteration=1400
+2018-05-03 06:35:55,044 - INFO - current perplexity on dev set: 80.03
+2018-05-03 06:36:07,236 - DEBUG - Epoch=12, iteration=1500
+2018-05-03 06:36:11,357 - INFO - current perplexity on dev set: 80.19
+2018-05-03 06:36:23,497 - DEBUG - Epoch=12, iteration=1600
+2018-05-03 06:36:27,571 - INFO - current perplexity on dev set: 79.90
+2018-05-03 06:36:39,732 - DEBUG - Epoch=12, iteration=1700
+2018-05-03 06:36:43,769 - INFO - current perplexity on dev set: 79.87
+2018-05-03 06:36:55,913 - DEBUG - Epoch=12, iteration=1800
+2018-05-03 06:36:59,919 - INFO - current perplexity on dev set: 79.84
+2018-05-03 06:37:12,067 - DEBUG - Epoch=12, iteration=1900
+2018-05-03 06:37:16,064 - INFO - current perplexity on dev set: 79.84
+2018-05-03 06:37:28,188 - DEBUG - Epoch=12, iteration=2000
+2018-05-03 06:37:32,234 - INFO - current perplexity on dev set: 80.12
+2018-05-03 06:37:44,452 - DEBUG - Epoch=12, iteration=2100
+2018-05-03 06:37:48,495 - INFO - current perplexity on dev set: 80.29
+2018-05-03 06:38:00,692 - DEBUG - Epoch=12, iteration=2200
+2018-05-03 06:38:04,819 - INFO - current perplexity on dev set: 80.16
+2018-05-03 06:38:17,038 - DEBUG - Epoch=12, iteration=2300
+2018-05-03 06:38:21,147 - INFO - current perplexity on dev set: 79.86
+2018-05-03 06:38:33,366 - DEBUG - Epoch=12, iteration=2400
+2018-05-03 06:38:37,401 - INFO - current perplexity on dev set: 79.92
+2018-05-03 06:38:38,128 - INFO - Perplexity on training data after epoch 12: 51.77
+2018-05-03 06:38:53,363 - DEBUG - Epoch=13, iteration=100
+2018-05-03 06:38:57,408 - INFO - current perplexity on dev set: 80.24
+2018-05-03 06:39:09,546 - DEBUG - Epoch=13, iteration=200
+2018-05-03 06:39:13,559 - INFO - current perplexity on dev set: 80.16
+2018-05-03 06:39:25,666 - DEBUG - Epoch=13, iteration=300
+2018-05-03 06:39:29,687 - INFO - current perplexity on dev set: 80.33
+2018-05-03 06:39:41,831 - DEBUG - Epoch=13, iteration=400
+2018-05-03 06:39:45,865 - INFO - current perplexity on dev set: 79.82
+2018-05-03 06:39:58,072 - DEBUG - Epoch=13, iteration=500
+2018-05-03 06:40:02,214 - INFO - current perplexity on dev set: 79.87
+2018-05-03 06:40:14,402 - DEBUG - Epoch=13, iteration=600
+2018-05-03 06:40:18,623 - INFO - current perplexity on dev set: 79.48
+2018-05-03 06:40:30,833 - DEBUG - Epoch=13, iteration=700
+2018-05-03 06:40:34,985 - INFO - current perplexity on dev set: 79.49
+2018-05-03 06:40:47,182 - DEBUG - Epoch=13, iteration=800
+2018-05-03 06:40:51,306 - INFO - current perplexity on dev set: 79.66
+2018-05-03 06:41:03,537 - DEBUG - Epoch=13, iteration=900
+2018-05-03 06:41:07,731 - INFO - current perplexity on dev set: 79.45
+2018-05-03 06:41:20,000 - DEBUG - Epoch=13, iteration=1000
+2018-05-03 06:41:24,249 - INFO - current perplexity on dev set: 79.46
+2018-05-03 06:41:36,591 - DEBUG - Epoch=13, iteration=1100
+2018-05-03 06:41:40,853 - INFO - current perplexity on dev set: 79.59
+2018-05-03 06:41:53,242 - DEBUG - Epoch=13, iteration=1200
+2018-05-03 06:41:57,433 - INFO - current perplexity on dev set: 79.32
+2018-05-03 06:42:09,795 - DEBUG - Epoch=13, iteration=1300
+2018-05-03 06:42:13,870 - INFO - current perplexity on dev set: 79.49
+2018-05-03 06:42:26,211 - DEBUG - Epoch=13, iteration=1400
+2018-05-03 06:42:30,389 - INFO - current perplexity on dev set: 79.46
+2018-05-03 06:42:42,736 - DEBUG - Epoch=13, iteration=1500
+2018-05-03 06:42:46,923 - INFO - current perplexity on dev set: 79.65
+2018-05-03 06:42:59,281 - DEBUG - Epoch=13, iteration=1600
+2018-05-03 06:43:03,339 - INFO - current perplexity on dev set: 79.38
+2018-05-03 06:43:15,654 - DEBUG - Epoch=13, iteration=1700
+2018-05-03 06:43:19,774 - INFO - current perplexity on dev set: 79.33
+2018-05-03 06:43:32,091 - DEBUG - Epoch=13, iteration=1800
+2018-05-03 06:43:36,200 - INFO - current perplexity on dev set: 79.33
+2018-05-03 06:43:48,554 - DEBUG - Epoch=13, iteration=1900
+2018-05-03 06:43:52,711 - INFO - current perplexity on dev set: 79.35
+2018-05-03 06:44:05,073 - DEBUG - Epoch=13, iteration=2000
+2018-05-03 06:44:09,231 - INFO - current perplexity on dev set: 79.62
+2018-05-03 06:44:09,232 - INFO - Training stopped early. Model starting to overfit. Perplexity on training data after epoch 13: 51.77

@@ -1,0 +1,16 @@
+2018-05-03 10:16:58,967 - WARNING - From /usr/local/lib/python3.6/site-packages/tensorflow/contrib/learn/python/learn/datasets/base.py:198: retry (from tensorflow.contrib.learn.python.learn.datasets.base) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use the retry module or similar alternatives.
+2018-05-03 10:16:59.800111: I tensorflow/core/platform/cpu_feature_guard.cc:140] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2018-05-03 10:16:59.987066: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:898] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2018-05-03 10:16:59.987946: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1344] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:09.0
+totalMemory: 11.17GiB freeMemory: 11.10GiB
+2018-05-03 10:16:59.987975: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1423] Adding visible gpu devices: 0
+2018-05-03 10:17:00.290465: I tensorflow/core/common_runtime/gpu/gpu_device.cc:911] Device interconnect StreamExecutor with strength 1 edge matrix:
+2018-05-03 10:17:00.290544: I tensorflow/core/common_runtime/gpu/gpu_device.cc:917]      0 
+2018-05-03 10:17:00.290555: I tensorflow/core/common_runtime/gpu/gpu_device.cc:930] 0:   N 
+2018-05-03 10:17:00.290974: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10764 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:09.0, compute capability: 3.7)
+2018-05-03 10:17:00,488 - INFO - Restoring parameters from model_3/model
+Perplexity: 77.69
